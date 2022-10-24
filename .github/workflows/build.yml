@@ -13,7 +13,7 @@ jobs:
   build:
 
     runs-on: windows-2019
-
+    environment: GH_TOKEN
     strategy:
       matrix:
         node-version: [14.x]
