@@ -67,7 +67,7 @@
     "cors": "^2.8.5",
     "crypto-js": "^3.1.9-1",
     "douyu-danmu": "^2.0.7",
-    "dplayer": "^1.25.0",
+    "dplayer": "1.25.0",
     "electron-better-ipc": "^1.0.1",
     "express": "^4.17.1",
     "ffmpeg-static": "^2.4.0",
