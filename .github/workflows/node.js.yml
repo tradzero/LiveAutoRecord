@@ -17,6 +17,7 @@ jobs:
     strategy:
       matrix:
         node-version: [14.x]
+        python-version: ["2.7"]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
@@ -26,6 +27,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    - name: install node tools
+      run: npm install --global --production windows-build-tools@4.0.0
     - run: npm install
     - run: npm run rebuild:sqlite3
     - run: npm run build
